@@ -1,0 +1,53 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li{
+    font-size: 1rem;
+    padding: 0px 0px;
+}
+/* Home Section */
+#home{
+    height: 550px;
+}
+#home:before{
+    height:950px
+}
+
+/* Playlist Section */
+#Playlist{
+    flex-direction: column;
+}
+#Playlist .box{
+    padding: 10px;
+    margin: 2px 0px;
+    border-radius: 25px;
+}
+.Playlist-container1 ul{
+    flex-direction: column;
+}
+.Playlist-container1 ul li a{
+    padding: 0px 0px;
+}
+.Playlist-container2 ul{
+    flex-direction: column;
+}
+.Playlist-container2 ul li a{
+    padding: 0px 0px;
+}
+.Playlist-container3 ul{
+    flex-direction: column;
+}
+.Playlist-container3 ul li a{
+    padding: 0px 0px;
+}
+
+   
+.btn{
+    font-size: 1.5rem;
+    padding: 2px 2px;
+}
+.btn1{
+    font-size: 1.5rem;
+    padding: 2px 2px;
+}

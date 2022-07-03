@@ -1,0 +1,282 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variable */
+:root{
+    --navbar-height:40px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 50px;
+
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar:before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: red;
+    background-color: bisque;    
+}
+
+
+/* Navigation Bar: for logo & image */
+#logo{
+    margin: 15px 25px;
+}
+#logo img{
+    margin: -2px 15px;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Navigation Bar: for List Styling */
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 180px 80px;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+}
+#home:before{
+    content: "";
+    background: url('../background/background1.webp') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(247, 249, 249);
+    text-align: center;
+    font-family: 'Diplomata SC', cursive;
+}
+#home p{
+    color: rgb(247, 249, 249);
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(3, 10, 78);
+    font-family: 'Roboto Slab', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(17, 43, 171);
+    color: blanchedalmond;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+
+/* Playlist Section */
+.Playlist-container{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+#Playlist{
+    margin: auto;
+    display: flex;
+    background-color: rgb(212, 196, 55);
+    opacity:0.8;
+}
+#Playlist .box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 25px;
+    background-color: rgb(213, 224, 118);
+}
+#Playlist .box img{
+    display: block;
+    height: 160px;
+    width: 160px;
+    margin: auto;
+}
+#Playlist .box p{
+    font-family: 'Smooch', cursive;
+}
+
+/* For Container 1 */
+.Playlist-container1 ul{
+    display: flex;
+    background-color: rgb(212, 196, 55);
+    opacity: 0.8;
+}
+.Playlist-container1 ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.Playlist-container1 ul li a{
+    font-size: 20px;
+    color: black;
+    padding: 0px 150px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Playlist-container1 ul li a:hover{
+    text-decoration:underline;
+}
+
+/* For Container 2 */
+.Playlist-container2 ul{
+    display: flex;
+    background-color: rgb(212, 196, 55);
+    opacity: 0.8;
+}
+.Playlist-container2 ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.Playlist-container2 ul li a{
+    font-size: 20px;
+    color: black;
+    padding: 0px 150px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Playlist-container2 ul li a:hover{
+    text-decoration:underline;
+}
+
+/* For Container 3 */
+.Playlist-container3 ul{
+    display: flex;
+    background-color: rgb(212, 196, 55);
+    opacity: 0.8;
+}
+.Playlist-container3 ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.Playlist-container3 ul li a{
+    font-size: 20px;
+    color: black;
+    padding: 0px 150px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Playlist-container3 ul li a:hover{
+    text-decoration:underline;
+}
+
+
+/* For Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* For navbar1 in footer */
+#navbar1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 60px;
+}
+#navbar1 ul{
+    display: flex;
+}
+#navbar1:before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar1 ul li{
+    list-style: none;
+    font-size: 0.8rem;
+}
+#navbar1 ul li a{
+    color: white;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar1 img{
+    height: 50px;
+    width:50px;
+    padding: 5px;
+    align-items: left;
+}
+#navbar1 h4{
+    color: white;
+}
+.btn1{
+    padding: 0px 0px;
+    margin: 10px;
+    background-color: black;
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn1:hover{
+    background-color:blue;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+.center{
+    text-align: center;
+}
